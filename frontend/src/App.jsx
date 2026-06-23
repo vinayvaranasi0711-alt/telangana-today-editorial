@@ -24,6 +24,7 @@ export default function App() {
   const [analyticsData, setAnalyticsData] = useState(null);
   const [analyticsLoading, setAnalyticsLoading] = useState(false);
   const [analyticsError, setAnalyticsError] = useState(null);
+  const [analyticsLastUpdated, setAnalyticsLastUpdated] = useState(null);
 
   // Fetch detailed admin metrics
   const fetchAnalytics = async () => {
@@ -34,6 +35,7 @@ export default function App() {
       const data = await response.json();
       if (response.ok) {
         setAnalyticsData(data);
+        setAnalyticsLastUpdated(new Date().toLocaleTimeString());
       } else {
         throw new Error(data.error || "Failed to load analytics reports.");
       }
@@ -292,6 +294,7 @@ export default function App() {
             isLoading={analyticsLoading}
             error={analyticsError}
             onRefresh={fetchAnalytics}
+            lastUpdated={analyticsLastUpdated}
           />
         </main>
       )}

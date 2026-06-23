@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AnalyticsDashboard({ data, isLoading, error, onRefresh }) {
+export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, lastUpdated }) {
   if (isLoading) {
     return (
       <div className="glass-panel dashboard-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '500px' }}>
@@ -106,9 +106,16 @@ export default function AnalyticsDashboard({ data, isLoading, error, onRefresh }
           <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)' }}>Editorial Quality & Usage Dashboard</h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Real-time analytics and editor feedback ratings overview</p>
         </div>
-        <button className="btn-copy" onClick={onRefresh} style={{ height: '38px', borderColor: 'rgba(255,255,255,0.1)', color: 'var(--text-secondary)' }}>
-          🔄 Refresh Stats
-        </button>
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+          {lastUpdated && (
+            <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', animation: 'fadeIn 0.3s ease' }}>
+              Last updated: {lastUpdated}
+            </span>
+          )}
+          <button className="btn-copy" onClick={onRefresh} style={{ height: '38px', borderColor: 'rgba(255,255,255,0.1)', color: 'var(--text-secondary)' }}>
+            🔄 Refresh Stats
+          </button>
+        </div>
       </div>
 
       {/* Overview Cards Grid */}
