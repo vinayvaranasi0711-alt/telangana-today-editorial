@@ -177,6 +177,40 @@ export default function App() {
     }
   };
 
+  // Handle Clearing Database History (Wipe out all records)
+  const handleClearHistory = async () => {
+    if (!window.confirm("Are you sure you want to permanently clear all translation history and analytics? This action cannot be undone.")) {
+      return;
+    }
+    try {
+      const response = await fetch(`${API_BASE}/api/history/clear`, {
+        method: 'POST'
+      });
+      if (response.ok) {
+        setHistory([]);
+        setOutput(null);
+        setSelectedRecord(null);
+        setActiveHistoryId(null);
+        setAnalyticsData({
+          total_generations: 0,
+          total_feedback: 0,
+          average_rating: 0,
+          average_latency_ms: 0,
+          distributions: { dialects: { Standard: 0, Hyderabadi: 0, Warangal: 0 }, tones: { Standard: 0, Colloquial: 0, Formal: 0 } },
+          top_journalists: [],
+          daily_trend: [],
+          feedback_logs: []
+        });
+        alert("Translation history cleared successfully!");
+      } else {
+        alert("Failed to clear history from database.");
+      }
+    } catch (err) {
+      console.error("Clear history connection error:", err);
+      alert("Unable to connect to backend to clear history.");
+    }
+  };
+
   // Handle Feedback Submission - POST to Backend API (Day 16)
   const handleSubmittingFeedback = async (generationId, rating, comment) => {
     try {
@@ -295,6 +329,7 @@ export default function App() {
             error={analyticsError}
             onRefresh={fetchAnalytics}
             lastUpdated={analyticsLastUpdated}
+            onClearHistory={handleClearHistory}
           />
         </main>
       )}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, lastUpdated }) {
+export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, lastUpdated, onClearHistory }) {
   if (isLoading) {
     return (
       <div className="glass-panel dashboard-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '500px' }}>
@@ -114,6 +114,9 @@ export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, 
           )}
           <button className="btn-copy" onClick={onRefresh} style={{ height: '38px', borderColor: 'rgba(255,255,255,0.1)', color: 'var(--text-secondary)' }}>
             🔄 Refresh Stats
+          </button>
+          <button className="btn-copy" onClick={onClearHistory} style={{ height: '38px', borderColor: 'rgba(239,68,68,0.2)', color: 'var(--accent-coral)', backgroundColor: 'rgba(239,68,68,0.08)' }}>
+            🗑️ Clear History
           </button>
         </div>
       </div>

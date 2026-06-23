@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { rateLimit } from 'express-rate-limit';
 import { generateLocalisedTranslation } from './promptEngine.js';
-import { saveGeneration, getHistory, getGenerationById, saveFeedback, getQualityAnalytics, getAdminAnalytics } from './db.js';
+import { saveGeneration, getHistory, getGenerationById, saveFeedback, getQualityAnalytics, getAdminAnalytics, clearHistory } from './db.js';
 
 dotenv.config();
 
@@ -183,6 +183,17 @@ app.post('/api/generate', apiRateLimiter, async (req, res) => {
       error: "Failed to generate localized Telugu translation.",
       details: error.message
     });
+  }
+});
+
+// POST /api/history/clear endpoint
+app.post('/api/history/clear', async (req, res) => {
+  try {
+    await clearHistory();
+    res.status(200).json({ success: true, message: "History cleared successfully." });
+  } catch (error) {
+    console.error("Failed to clear history:", error);
+    res.status(500).json({ error: "Failed to clear history." });
   }
 });
 

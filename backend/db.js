@@ -282,3 +282,10 @@ export async function getAdminAnalytics() {
     feedback_logs: feedbackLogs
   };
 }
+
+export async function clearHistory() {
+  const emptyDb = { generations: [], feedback: [] };
+  await writeDb(emptyDb);
+  return emptyDb;
+}
+
