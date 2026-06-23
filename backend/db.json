@@ -1,0 +1,1169 @@
+{
+  "generations": [
+    {
+      "id": "01e782c4-754b-417c-bad1-da38ac693205",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1511,
+      "timestamp": "2026-06-11T04:37:01.625Z"
+    },
+    {
+      "id": "7d473e64-efa1-4507-ab5e-b1747b49715f",
+      "journalist": "Sai Vinay",
+      "inputs": "Civic hygiene drive",
+      "english": "Local authorities in Hyderabad are kicking off a major cleaning drive in all residential colonies next week.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "[Mock Telugu Translation] week. next colonies residential all in drive cleaning major a off kicking are Hyderabad in authorities Local (అనువాదం: సహజసిద్ధమైన వాడుక శైలి, Hyderabadi ప్రాంతీయ మాండలికం మాండలికంలో - API కీ అందుబాటులో లేదు)",
+      "cultural_notes": [
+        "Localized the text to Telugu using a సహజసిద్ధమైన వాడుక tone.",
+        "Adapted phrasing to match the Hyderabadi ప్రాంతీయ మాండలికం style rules.",
+        "To see genuine AI translations, configure a valid GEMINI_API_KEY in the backend .env file."
+      ],
+      "response_time_ms": 1503,
+      "timestamp": "2026-06-11T04:42:43.292Z"
+    },
+    {
+      "id": "89d14cb7-28fa-4c12-a94d-8d0b8869c115",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1506,
+      "timestamp": "2026-06-11T04:46:19.368Z"
+    },
+    {
+      "id": "b86bf157-986b-4389-aade-ef5a07478c0d",
+      "journalist": "Sneha Reddy",
+      "inputs": "Highlight governmental promises and administrative project names",
+      "english": "The minister assured that irrigation projects in the district will be completed before the monsoon season.",
+      "tone": "Formal",
+      "dialect": "Warangal",
+      "telugu_translation": "వర్షాకాల ప్రారంభమునకు పూర్వమే సదరు జిల్లాలోని సాగునీటి ప్రాజెక్టులను సంపూర్ణం చేయగలమని గౌరవనీయులైన మంత్రి వర్యులు భరోసా ఇచ్చారు.",
+      "cultural_notes": [
+        "Used highly respectful terms 'గౌరవనీయులైన మంత్రి వర్యులు' (Honorable Minister).",
+        "Translated 'assured' to formal literary 'భరోసా ఇచ్చారు'."
+      ],
+      "response_time_ms": 1502,
+      "timestamp": "2026-06-11T04:50:10.326Z"
+    },
+    {
+      "id": "a86a203c-53ee-4b55-88cc-70332ced0966",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1503,
+      "timestamp": "2026-06-13T04:59:23.801Z"
+    },
+    {
+      "id": "14571e9a-b664-4c1b-82cc-af189b7bbf16",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1504,
+      "timestamp": "2026-06-13T05:04:03.829Z"
+    },
+    {
+      "id": "4a53faa5-314a-43fa-8257-b17c0ce37b62",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1508,
+      "timestamp": "2026-06-14T09:45:37.073Z"
+    },
+    {
+      "id": "e3b70a87-2d5b-4662-b97f-00d56fb5ce91",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1508,
+      "timestamp": "2026-06-14T09:48:52.293Z"
+    },
+    {
+      "id": "784c01b2-c92a-4ab9-9ba8-5aa878200af3",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1515,
+      "timestamp": "2026-06-14T09:49:45.146Z"
+    },
+    {
+      "id": "b18cb9f4-c0a2-4440-ae9a-b1c60e56fd31",
+      "journalist": "Sneha Reddy",
+      "inputs": "Highlight governmental promises and administrative project names",
+      "english": "The minister assured that irrigation projects in the district will be completed before the monsoon season.",
+      "tone": "Formal",
+      "dialect": "Warangal",
+      "telugu_translation": "వర్షాకాల ప్రారంభమునకు పూర్వమే సదరు జిల్లాలోని సాగునీటి ప్రాజెక్టులను సంపూర్ణం చేయగలమని గౌరవనీయులైన మంత్రి వర్యులు భరోసా ఇచ్చారు.",
+      "cultural_notes": [
+        "Used highly respectful terms 'గౌరవనీయులైన మంత్రి వర్యులు' (Honorable Minister).",
+        "Translated 'assured' to formal literary 'భరోసా ఇచ్చారు'."
+      ],
+      "response_time_ms": 1508,
+      "timestamp": "2026-06-14T09:53:06.834Z"
+    },
+    {
+      "id": "702dbcba-a13c-47d4-b9f5-175b4eebeb61",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1502,
+      "timestamp": "2026-06-15T03:55:00.945Z"
+    },
+    {
+      "id": "3ad2ca3a-a160-46e4-a456-cb4d739adc8c",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1512,
+      "timestamp": "2026-06-15T03:55:31.783Z"
+    },
+    {
+      "id": "4f02cad2-57eb-40eb-b811-6f28fa779125",
+      "journalist": "A. Kumar",
+      "inputs": "Infuse festival terms, energy, and localized religious greetings",
+      "english": "People celebrated Bonalu with high energy and traditional drums across the old city.",
+      "tone": "Colloquial",
+      "dialect": "Standard",
+      "telugu_translation": "పాతబస్తీ అంతటా బోనాల పండుగను డప్పుల మోతతో, పోతురాజుల డాన్సులతో జనాలు గట్టిగా జరుపుకున్నారు.",
+      "cultural_notes": [
+        "Used local terms 'డప్పుల మోతతో' and 'పోతురాజులు' representing cultural nuances of Bonalu.",
+        "Adapted 'people celebrated' to colloquial 'జనాలు గట్టిగా జరుపుకున్నారు'."
+      ],
+      "response_time_ms": 1502,
+      "timestamp": "2026-06-15T03:55:53.913Z"
+    },
+    {
+      "id": "d39fc34c-fce0-41a0-b02a-08c52d6bc01e",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1504,
+      "timestamp": "2026-06-15T03:57:36.059Z"
+    },
+    {
+      "id": "7a94a1cc-1739-4b86-b027-40e68f7d1e21",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1504,
+      "timestamp": "2026-06-15T04:03:39.067Z"
+    },
+    {
+      "id": "6afdf650-738c-492d-9764-8ec80fe7d8fe",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1506,
+      "timestamp": "2026-06-15T04:07:04.335Z"
+    },
+    {
+      "id": "881f8e56-34b8-4e7d-abe6-d03a076b6dd3",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1509,
+      "timestamp": "2026-06-15T04:12:42.176Z"
+    },
+    {
+      "id": "000551c1-8570-4e6a-90a7-6538415db046",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1509,
+      "timestamp": "2026-06-15T04:16:05.742Z"
+    },
+    {
+      "id": "92eaa5da-82c8-4bc9-9999-619c212db3cc",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1515,
+      "timestamp": "2026-06-15T09:25:43.949Z"
+    },
+    {
+      "id": "e952c322-498f-46be-be04-0f6c8cca20e0",
+      "journalist": "Ramesh K.Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1503,
+      "timestamp": "2026-06-15T09:27:12.035Z"
+    },
+    {
+      "id": "b6bdae01-9782-4286-a9d6-2a94ca962e5e",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1502,
+      "timestamp": "2026-06-15T09:29:50.075Z"
+    },
+    {
+      "id": "d8d3f9b4-4814-497d-bdd8-fabb25f2ac56",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1511,
+      "timestamp": "2026-06-15T09:30:26.559Z"
+    },
+    {
+      "id": "548c441d-d35b-4cd1-a396-3ca7397a2247",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1506,
+      "timestamp": "2026-06-15T09:32:13.771Z"
+    },
+    {
+      "id": "ed6c3fec-0820-48ee-b5e9-a4089e5d1c09",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1505,
+      "timestamp": "2026-06-17T03:56:08.771Z"
+    },
+    {
+      "id": "c116628c-d58f-4be1-8c75-523f63d9db25",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1500,
+      "timestamp": "2026-06-17T04:04:30.489Z"
+    },
+    {
+      "id": "43327b60-86d5-4a25-aad1-91b44d58192d",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1510,
+      "timestamp": "2026-06-17T04:48:05.019Z"
+    },
+    {
+      "id": "d52a2ebc-2671-4ad8-9844-6f0ad7cb553b",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1503,
+      "timestamp": "2026-06-17T04:49:21.583Z"
+    },
+    {
+      "id": "4756610e-8f65-4f61-b90e-62c3eac8d2eb",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1515,
+      "timestamp": "2026-06-17T05:30:19.893Z"
+    },
+    {
+      "id": "84c26503-e4f3-42a5-9d52-464fb363ba4d",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1505,
+      "timestamp": "2026-06-19T04:28:23.260Z"
+    },
+    {
+      "id": "bb1776f1-ab9f-4c8c-99e9-a9184fab1737",
+      "journalist": "Sneha Reddy",
+      "inputs": "Highlight governmental promises and administrative project names",
+      "english": "The minister assured that irrigation projects in the district will be completed before the monsoon season.",
+      "tone": "Formal",
+      "dialect": "Warangal",
+      "telugu_translation": "వర్షాకాల ప్రారంభమునకు పూర్వమే సదరు జిల్లాలోని సాగునీటి ప్రాజెక్టులను సంపూర్ణం చేయగలమని గౌరవనీయులైన మంత్రి వర్యులు భరోసా ఇచ్చారు.",
+      "cultural_notes": [
+        "Used highly respectful terms 'గౌరవనీయులైన మంత్రి వర్యులు' (Honorable Minister).",
+        "Translated 'assured' to formal literary 'భరోసా ఇచ్చారు'."
+      ],
+      "response_time_ms": 1513,
+      "timestamp": "2026-06-19T04:30:25.757Z"
+    },
+    {
+      "id": "d86df86f-6e21-4599-8c77-0c0bf24858f4",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1513,
+      "timestamp": "2026-06-19T04:53:39.154Z"
+    },
+    {
+      "id": "bf4fec17-5f0b-4308-b4f8-af9ad776b9e8",
+      "journalist": "Ramesh K.",
+      "inputs": "Dynamic sports reporting, focus on final-minute tension",
+      "english": "Hyderabad FC clinched a dramatic victory in the final minutes of the match.",
+      "tone": "Standard",
+      "dialect": "Standard",
+      "telugu_translation": "[Mock Telugu Translation] match. the of minutes final the in victory dramatic a clinched FC Hyderabad (అనువాదం: ప్రామాణిక వార్తా శైలి, ప్రామాణిక మాండలికంలో - API కీ అందుబాటులో లేదు)",
+      "cultural_notes": [
+        "Localized the text to Telugu using a ప్రామాణిక వార్తా tone.",
+        "Adapted phrasing to match the ప్రామాణిక style rules.",
+        "To see genuine AI translations, configure a valid GEMINI_API_KEY in the backend .env file."
+      ],
+      "response_time_ms": 1506,
+      "timestamp": "2026-06-19T04:55:30.937Z"
+    },
+    {
+      "id": "e05196e3-9453-438c-acfe-77661c1df1cd",
+      "journalist": "Ramesh K.",
+      "inputs": "Dynamic sports reporting, focus on final-minute tension",
+      "english": "Hyderabad FC clinched a dramatic victory in the final minutes of the match.",
+      "tone": "Standard",
+      "dialect": "Standard",
+      "telugu_translation": "హైదరాబాద్ ఎఫ్‌సి మ్యాచ్ చివరి నిమిషంలో నాటకీయ విజయాన్ని కైవసం చేసుకుంది.",
+      "cultural_notes": [
+        "Used active voice phrasing 'విజయాన్ని కైవసం చేసుకుంది' which is standard in regional sports reporting.",
+        "Translated 'final minutes' to 'చివరి నిమిషంలో' for natural news flow."
+      ],
+      "response_time_ms": 1504,
+      "timestamp": "2026-06-20T04:36:32.871Z"
+    },
+    {
+      "id": "2abad878-4f53-426e-a11e-b3509c4bfd8b",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1508,
+      "timestamp": "2026-06-20T04:36:36.239Z"
+    },
+    {
+      "id": "79245da2-0361-4ab9-88c7-fd14814e1661",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1502,
+      "timestamp": "2026-06-20T04:42:24.649Z"
+    },
+    {
+      "id": "495f84c3-680d-4fad-b51b-12b87e2bc09f",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1501,
+      "timestamp": "2026-06-20T04:44:52.826Z"
+    },
+    {
+      "id": "b6cd3c5f-b862-4215-962c-48c7e856a283",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1502,
+      "timestamp": "2026-06-20T04:48:10.028Z"
+    },
+    {
+      "id": "3fcdb9f4-d59c-4a71-852b-669b2f535495",
+      "journalist": "praveen",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1511,
+      "timestamp": "2026-06-20T04:48:36.185Z"
+    },
+    {
+      "id": "2fe9adfb-5d24-42c2-8d1f-2ac1501f4754",
+      "journalist": "Ramesh K.",
+      "inputs": "Ensure focus on municipal efforts and Deccani civic vernacular",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1508,
+      "timestamp": "2026-06-20T04:49:05.019Z"
+    },
+    {
+      "id": "0d3dea71-e072-4e15-9af0-ab0868a5205e",
+      "journalist": "praveen",
+      "inputs": "Highlight governmental promises and administrative project names",
+      "english": "The minister assured that irrigation projects in the district will be completed before the monsoon season.",
+      "tone": "Formal",
+      "dialect": "Standard",
+      "telugu_translation": "వర్షాకాల ప్రారంభమునకు పూర్వమే సదరు జిల్లాలోని సాగునీటి ప్రాజెక్టులను సంపూర్ణం చేయగలమని గౌరవనీయులైన మంత్రి వర్యులు భరోసా ఇచ్చారు.",
+      "cultural_notes": [
+        "Used highly respectful terms 'గౌరవనీయులైన మంత్రి వర్యులు' (Honorable Minister).",
+        "Translated 'assured' to formal literary 'భరోసా ఇచ్చారు'."
+      ],
+      "response_time_ms": 1508,
+      "timestamp": "2026-06-20T04:50:29.927Z"
+    },
+    {
+      "id": "ec076632-d2cd-4e75-9f2a-48a0ec290e71",
+      "journalist": "Ramesh K.",
+      "inputs": "Dynamic sports reporting, focus on final-minute tension",
+      "english": "Hyderabad FC clinched a dramatic victory in the final minutes of the match.",
+      "tone": "Standard",
+      "dialect": "Standard",
+      "telugu_translation": "హైదరాబాద్ ఎఫ్‌సి మ్యాచ్ చివరి నిమిషంలో నాటకీయ విజయాన్ని కైవసం చేసుకుంది.",
+      "cultural_notes": [
+        "Used active voice phrasing 'విజయాన్ని కైవసం చేసుకుంది' which is standard in regional sports reporting.",
+        "Translated 'final minutes' to 'చివరి నిమిషంలో' for natural news flow."
+      ],
+      "response_time_ms": 1512,
+      "timestamp": "2026-06-20T05:07:20.054Z"
+    },
+    {
+      "id": "962fa313-deaa-4f43-959e-435854df6c79",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1517,
+      "timestamp": "2026-06-20T05:40:44.388Z"
+    },
+    {
+      "id": "e671f458-18bb-4824-8391-910b7c37a54f",
+      "journalist": "Ramesh K.",
+      "inputs": "Dynamic sports reporting, focus on final-minute tension",
+      "english": "Hyderabad FC clinched a dramatic victory in the final minutes of the match.",
+      "tone": "Standard",
+      "dialect": "Standard",
+      "telugu_translation": "హైదరాబాద్ ఎఫ్‌సి మ్యాచ్ చివరి నిమిషంలో నాటకీయ విజయాన్ని కైవసం చేసుకుంది.",
+      "cultural_notes": [
+        "Used active voice phrasing 'విజయాన్ని కైవసం చేసుకుంది' which is standard in regional sports reporting.",
+        "Translated 'final minutes' to 'చివరి నిమిషంలో' for natural news flow."
+      ],
+      "response_time_ms": 1505,
+      "timestamp": "2026-06-20T06:40:00.351Z"
+    },
+    {
+      "id": "ff536710-1b08-4787-b541-30d3851b9dad",
+      "journalist": "Ramesh K.",
+      "inputs": "Dynamic sports reporting, focus on final-minute tension",
+      "english": "Hyderabad FC clinched a dramatic victory in the final minutes of the match.",
+      "tone": "Standard",
+      "dialect": "Warangal",
+      "telugu_translation": "హైదరాబాద్ ఎఫ్‌సి మ్యాచ్ చివరి నిమిషంలో నాటకీయ విజయాన్ని కైవసం చేసుకుంది.",
+      "cultural_notes": [
+        "Used active voice phrasing 'విజయాన్ని కైవసం చేసుకుంది' which is standard in regional sports reporting.",
+        "Translated 'final minutes' to 'చివరి నిమిషంలో' for natural news flow."
+      ],
+      "response_time_ms": 1512,
+      "timestamp": "2026-06-20T07:00:18.744Z"
+    },
+    {
+      "id": "e1b50e05-34eb-4b0b-b1ba-e24bbc54e664",
+      "journalist": "Ramesh K.",
+      "inputs": "Dynamic sports reporting, focus on final-minute tension",
+      "english": "sudireddy akira",
+      "tone": "Standard",
+      "dialect": "Warangal",
+      "telugu_translation": "[Mock Telugu Translation] akira sudireddy (అనువాదం: ప్రామాణిక వార్తా శైలి, Warangal ప్రాంతీయ మాండలికం మాండలికంలో - API కీ అందుబాటులో లేదు)",
+      "cultural_notes": [
+        "Localized the text to Telugu using a ప్రామాణిక వార్తా tone.",
+        "Adapted phrasing to match the Warangal ప్రాంతీయ మాండలికం style rules.",
+        "To see genuine AI translations, configure a valid GEMINI_API_KEY in the backend .env file."
+      ],
+      "response_time_ms": 1512,
+      "timestamp": "2026-06-20T07:00:43.659Z"
+    },
+    {
+      "id": "cf81ee29-afae-492c-a78c-ca3675f9ca53",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1505,
+      "timestamp": "2026-06-20T08:22:01.983Z"
+    },
+    {
+      "id": "0757c9ec-9e73-4dc1-9ca7-7f085b6f794f",
+      "journalist": "Ramesh K.",
+      "inputs": "Dynamic sports reporting, focus on final-minute tension",
+      "english": "Hyderabad FC clinched a dramatic victory in the final minutes of the match.",
+      "tone": "Standard",
+      "dialect": "Standard",
+      "telugu_translation": "హైదరాబాద్ ఎఫ్‌సి మ్యాచ్ చివరి నిమిషంలో నాటకీయ విజయాన్ని కైవసం చేసుకుంది.",
+      "cultural_notes": [
+        "Used active voice phrasing 'విజయాన్ని కైవసం చేసుకుంది' which is standard in regional sports reporting.",
+        "Translated 'final minutes' to 'చివరి నిమిషంలో' for natural news flow."
+      ],
+      "response_time_ms": 1504,
+      "timestamp": "2026-06-20T08:51:04.090Z"
+    },
+    {
+      "id": "a4456299-3558-4f99-bdc3-93635fa6df75",
+      "journalist": "Ramesh K.",
+      "inputs": "Dynamic sports reporting, focus on final-minute tension",
+      "english": "Hyderabad FC clinched a dramatic victory in the final minutes of the match.",
+      "tone": "Standard",
+      "dialect": "Warangal",
+      "telugu_translation": "హైదరాబాద్ ఎఫ్‌సి మ్యాచ్ చివరి నిమిషంలో నాటకీయ విజయాన్ని కైవసం చేసుకుంది.",
+      "cultural_notes": [
+        "Used active voice phrasing 'విజయాన్ని కైవసం చేసుకుంది' which is standard in regional sports reporting.",
+        "Translated 'final minutes' to 'చివరి నిమిషంలో' for natural news flow."
+      ],
+      "response_time_ms": 1512,
+      "timestamp": "2026-06-20T08:51:26.188Z"
+    },
+    {
+      "id": "6f2c7620-d6a2-4380-9456-a78d27bdc1de",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1510,
+      "timestamp": "2026-06-20T09:06:44.900Z"
+    },
+    {
+      "id": "9699a690-9706-46b5-a49d-bf391fea24e2",
+      "journalist": "rajesh",
+      "inputs": "",
+      "english": "today weather is nice\n",
+      "tone": "Standard",
+      "dialect": "Warangal",
+      "telugu_translation": "[Mock Telugu Translation] nice\n is weather today (అనువాదం: ప్రామాణిక వార్తా శైలి, Warangal ప్రాంతీయ మాండలికం మాండలికంలో - API కీ అందుబాటులో లేదు)",
+      "cultural_notes": [
+        "Localized the text to Telugu using a ప్రామాణిక వార్తా tone.",
+        "Adapted phrasing to match the Warangal ప్రాంతీయ మాండలికం style rules.",
+        "To see genuine AI translations, configure a valid GEMINI_API_KEY in the backend .env file."
+      ],
+      "response_time_ms": 2,
+      "timestamp": "2026-06-20T09:09:52.499Z"
+    },
+    {
+      "id": "742f5e4c-7582-4ba7-b629-442a71cc48a9",
+      "journalist": "rajesh",
+      "inputs": "",
+      "english": "today weather is nice\n",
+      "tone": "Standard",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "[Mock Telugu Translation] nice\n is weather today (అనువాదం: ప్రామాణిక వార్తా శైలి, Hyderabadi ప్రాంతీయ మాండలికం మాండలికంలో - API కీ అందుబాటులో లేదు)",
+      "cultural_notes": [
+        "Localized the text to Telugu using a ప్రామాణిక వార్తా tone.",
+        "Adapted phrasing to match the Hyderabadi ప్రాంతీయ మాండలికం style rules.",
+        "To see genuine AI translations, configure a valid GEMINI_API_KEY in the backend .env file."
+      ],
+      "response_time_ms": 0,
+      "timestamp": "2026-06-20T09:10:08.171Z"
+    },
+    {
+      "id": "d59ef4b2-f402-4e91-b93d-78bb8640bd1f",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1,
+      "timestamp": "2026-06-20T09:12:51.832Z"
+    },
+    {
+      "id": "7d96a085-00d6-4800-91b4-2d47d1dc163c",
+      "journalist": "rajesh",
+      "inputs": "",
+      "english": "today weather is nice\n",
+      "tone": "Standard",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "ఈరోజు వాతావరణం బాగుంది",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: ప్రామాణిక వార్తా. Selected dialect: Hyderabadi ప్రాంతీయ మాండలికం.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced stylistic adaptation (active voice, localized idioms, and dialect slang modifications)."
+      ],
+      "response_time_ms": 868,
+      "timestamp": "2026-06-20T09:13:06.631Z"
+    },
+    {
+      "id": "395517bf-66da-4848-9533-a0ec1226c97f",
+      "journalist": "rajesh",
+      "inputs": "",
+      "english": "Hyderabad Traffic Police will enforce restrictions and diversions in the Old City on June 20 between 12 pm and 1 pm for the Elephant Trial Walk from Bibi‑ka‑Alawa. Several key junctions including Charminar, Etebar Chowk and Purani Haveli will see diversions on Saturday. ",
+      "tone": "Standard",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "హైదరాబాద్ ట్రాఫిక్ పోలీసులు బీబీ-కా-అలవా నుండి ఎలిఫెంట్ ట్రయల్ వాక్ కోసం జూన్ 20న మధ్యాహ్నం 12 గంటల నుండి 1 గంటల మధ్య పాతబస్తీలో ఆంక్షలు మరియు మళ్లింపులను అమలు చేస్తారు. చార్మినార్, ఎతేబార్ చౌక్, పురాణి హవేలీ సహా పలు కీలక జంక్షన్లలో శనివారం మళ్లింపులు జరుగుతాయి.",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: ప్రామాణిక వార్తా. Selected dialect: Hyderabadi ప్రాంతీయ మాండలికం.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced stylistic adaptation (active voice, localized idioms, and dialect slang modifications)."
+      ],
+      "response_time_ms": 1030,
+      "timestamp": "2026-06-20T09:14:15.558Z"
+    },
+    {
+      "id": "7b2eae3f-78e4-49da-a238-8d6902e0a34d",
+      "journalist": "rajesh",
+      "inputs": "",
+      "english": "Hyderabad Traffic Police will enforce restrictions and diversions in the Old City on June 20 between 12 pm and 1 pm for the Elephant Trial Walk from Bibi‑ka‑Alawa. Several key junctions including Charminar, Etebar Chowk and Purani Haveli will see diversions on Saturday. ",
+      "tone": "Standard",
+      "dialect": "Warangal",
+      "telugu_translation": "హైదరాబాద్ ట్రాఫిక్ పోలీసులు బీబీ-కా-అలవా నుండి ఎలిఫెంట్ ట్రయల్ వాక్ కోసం జూన్ 20న మధ్యాహ్నం 12 గంటల నుండి 1 గంటల మధ్య పాతబస్తీలో ఆంక్షలు మరియు మళ్లింపులను అమలు చేస్తారు. చార్మినార్, ఎతేబార్ చౌక్, పురాణి హవేలీ సహా పలు కీలక జంక్షన్లలో శనివారం మళ్లింపులు జరుగుతాయి.",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: ప్రామాణిక వార్తా. Selected dialect: Warangal ప్రాంతీయ మాండలికం.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced stylistic adaptation (active voice, localized idioms, and dialect slang modifications)."
+      ],
+      "response_time_ms": 7770,
+      "timestamp": "2026-06-20T09:14:39.549Z"
+    },
+    {
+      "id": "29ef463f-03b3-4aa0-901b-692dbba6783f",
+      "journalist": "rajesh",
+      "inputs": "",
+      "english": "Hyderabad Traffic Police will enforce restrictions and diversions in the Old City on June 20 between 12 pm and 1 pm for the Elephant Trial Walk from Bibi‑ka‑Alawa. Several key junctions including Charminar, Etebar Chowk and Purani Haveli will see diversions on Saturday. ",
+      "tone": "Colloquial",
+      "dialect": "Warangal",
+      "telugu_translation": "హైదరాబాద్ ట్రాఫిక్ పోలీసులు బీబీ-కా-అలవా నుండి ఎలిఫెంట్ ట్రయల్ వాక్ కోసం జూన్ 20న మధ్యాహ్నం 12 గంటల నుండి 1 గంటల మధ్య పాతబస్తీలో ఆంక్షలు మరియు మళ్లింపులను అమలు చేస్తారు. చార్మినార్, ఎతేబార్ చౌక్, పురాణి హవేలీ సహా పలు కీలక జంక్షన్లలో శనివారం మళ్లింపులు జరుగుతాయి.",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: సహజసిద్ధమైన వాడుక. Selected dialect: Warangal ప్రాంతీయ మాండలికం.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced stylistic adaptation (active voice, localized idioms, and dialect slang modifications)."
+      ],
+      "response_time_ms": 1079,
+      "timestamp": "2026-06-20T09:15:24.359Z"
+    },
+    {
+      "id": "52e86698-890b-47b1-b610-905e281fe535",
+      "journalist": "rajesh",
+      "inputs": "",
+      "english": "Hyderabad Traffic Police will enforce restrictions and diversions in the Old City on June 20 between 12 pm and 1 pm for the Elephant Trial Walk from Bibi‑ka‑Alawa. Several key junctions including Charminar, Etebar Chowk and Purani Haveli will see diversions on Saturday. ",
+      "tone": "Colloquial",
+      "dialect": "Warangal",
+      "telugu_translation": "[Mock Telugu Translation]  Saturday. on diversions see will Haveli Purani and Chowk Etebar Charminar, including junctions key Several Bibi‑ka‑Alawa. from Walk Trial Elephant the for pm 1 and pm 12 between 20 June on City Old the in diversions and restrictions enforce will Police Traffic Hyderabad (అనువాదం: సహజసిద్ధమైన వాడుక శైలి, Warangal ప్రాంతీయ మాండలికం మాండలికంలో - API కీ అందుబాటులో లేదు)",
+      "cultural_notes": [
+        "Localized the text to Telugu using a సహజసిద్ధమైన వాడుక tone.",
+        "Adapted phrasing to match the Warangal ప్రాంతీయ మాండలికం style rules.",
+        "Configure a valid GEMINI_API_KEY in the backend .env file to enable live translation."
+      ],
+      "response_time_ms": 10482,
+      "timestamp": "2026-06-20T09:17:27.535Z"
+    },
+    {
+      "id": "f08e2a71-3adb-49cb-911c-85bb937c3a8f",
+      "journalist": "rao",
+      "inputs": "",
+      "english": "Hyderabad Traffic Police will enforce restrictions and diversions in the Old City on June 20 between 12 pm and 1 pm for the Elephant Trial Walk from Bibi‑ka‑Alawa. Several key junctions including Charminar, Etebar Chowk and Purani Haveli will see diversions on Saturday. ",
+      "tone": "Standard",
+      "dialect": "Standard",
+      "telugu_translation": "హైదరాబాద్ ట్రాఫిక్ పోలీసులు బీబీ-కా-అలవా నుండి ఎలిఫెంట్ ట్రయల్ వాక్ కోసం జూన్ 20న మధ్యాహ్నం 12 గంటల నుండి 1 గంటల మధ్య పాతబస్తీలో ఆంక్షలు మరియు మళ్లింపులను అమలు చేస్తారు. చార్మినార్, ఎతేబార్ చౌక్, పురాణి హవేలీ సహా పలు కీలక జంక్షన్లలో శనివారం మళ్లింపులు జరుగుతాయి.",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: ప్రామాణిక వార్తా. Selected dialect: ప్రామాణిక.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced stylistic adaptation (active voice, localized idioms, and dialect slang modifications)."
+      ],
+      "response_time_ms": 4696,
+      "timestamp": "2026-06-20T09:20:14.143Z"
+    },
+    {
+      "id": "7dc4cf71-34d0-4290-bd3b-c0ae54280c57",
+      "journalist": "rao",
+      "inputs": "",
+      "english": "Warangal, another significant city in Telangana, often features prominently in travel guides for its historical importance and architectural marvels. Guides typically cover the Warangal Fort, known for its intricate stone carvings and the Thousand Pillar Temple, a masterpiece of Kakatiya architecture. The nearby Bhadrakali Temple and the serene Pakhal Lake are also popular destinations. A guide would provide insights into the history of the Kakatiya dynasty, which ruled this region, and suggest ways to experience the local culture and heritage.",
+      "tone": "Standard",
+      "dialect": "Standard",
+      "telugu_translation": "తెలంగాణలోని మరొక ముఖ్యమైన నగరం వరంగల్, దాని చారిత్రక ప్రాముఖ్యత మరియు నిర్మాణ అద్భుతాల కోసం తరచుగా ట్రావెల్ గైడ్‌లలో ప్రముఖంగా కనిపిస్తుంది. గైడ్‌లు సాధారణంగా వరంగల్ కోటను కవర్ చేస్తారు, ఇది క్లిష్టమైన రాతి శిల్పాలకు ప్రసిద్ధి చెందింది మరియు కాకతీయ వాస్తుశిల్పం యొక్క అద్భుత కళాఖండం. సమీపంలోని భద్రకాళి ఆలయం మరియు ప్రశాంతమైన పాఖల్ సరస్సు కూడా ప్రసిద్ధ గమ్యస్థానాలు. ఒక గైడ్ ఈ ప్రాంతాన్ని పాలించిన కాకతీయ రాజవంశం యొక్క చరిత్రలో అంతర్దృష్టులను అందిస్తుంది మరియు స్థానిక సంస్కృతి మరియు వారసత్వాన్ని అనుభవించడానికి మార్గాలను సూచిస్తుంది.",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: ప్రామాణిక వార్తా. Selected dialect: ప్రామాణిక.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced stylistic adaptation (active voice, localized idioms, and dialect slang modifications)."
+      ],
+      "response_time_ms": 1185,
+      "timestamp": "2026-06-20T09:25:46.346Z"
+    },
+    {
+      "id": "9f86a73d-bf25-47ae-ab17-71ed5e7561ac",
+      "journalist": "rao",
+      "inputs": "",
+      "english": "Warangal, another significant city in Telangana, often features prominently in travel guides for its historical importance and architectural marvels. Guides typically cover the Warangal Fort, known for its intricate stone carvings and the Thousand Pillar Temple, a masterpiece of Kakatiya architecture. The nearby Bhadrakali Temple and the serene Pakhal Lake are also popular destinations. A guide would provide insights into the history of the Kakatiya dynasty, which ruled this region, and suggest ways to experience the local culture and heritage.",
+      "tone": "Standard",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "తెలంగాణలోని మరొక ముఖ్యమైన నగరం వరంగల్, దాని చారిత్రక ప్రాముఖ్యత మరియు నిర్మాణ అద్భుతాల కోసం తరచుగా ట్రావెల్ గైడ్‌లలో ప్రముఖంగా కనిపిస్తుంది. గైడ్‌లు సాధారణంగా వరంగల్ కోటను కవర్ చేస్తారు, ఇది క్లిష్టమైన రాతి శిల్పాలకు ప్రసిద్ధి చెందింది మరియు కాకతీయ వాస్తుశిల్పం యొక్క అద్భుత కళాఖండం. సమీపంలోని భద్రకాళి ఆలయం మరియు ప్రశాంతమైన పాఖల్ సరస్సు కూడా ప్రసిద్ధ గమ్యస్థానాలు. ఒక గైడ్ ఈ ప్రాంతాన్ని పాలించిన కాకతీయ రాజవంశం యొక్క చరిత్రలో అంతర్దృష్టులను అందిస్తుంది మరియు స్థానిక సంస్కృతి మరియు వారసత్వాన్ని అనుభవించడానికి మార్గాలను సూచిస్తుంది.",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: ప్రామాణిక వార్తా. Selected dialect: Hyderabadi ప్రాంతీయ మాండలికం.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced AI-driven contextual localization."
+      ],
+      "response_time_ms": 511,
+      "timestamp": "2026-06-20T09:26:30.525Z"
+    },
+    {
+      "id": "d2a418cd-e65a-4719-8d89-9ec5da76a35d",
+      "journalist": "rao",
+      "inputs": "",
+      "english": "Warangal, another significant city in Telangana, often features prominently in travel guides for its historical importance and architectural marvels. Guides typically cover the Warangal Fort, known for its intricate stone carvings and the Thousand Pillar Temple, a masterpiece of Kakatiya architecture. The nearby Bhadrakali Temple and the serene Pakhal Lake are also popular destinations. A guide would provide insights into the history of the Kakatiya dynasty, which ruled this region, and suggest ways to experience the local culture and heritage.",
+      "tone": "Standard",
+      "dialect": "Warangal",
+      "telugu_translation": "తెలంగాణలోని మరొక ముఖ్యమైన నగరం వరంగల్, దాని చారిత్రక ప్రాముఖ్యత మరియు నిర్మాణ అద్భుతాల కోసం తరచుగా ట్రావెల్ గైడ్‌లలో ప్రముఖంగా కనిపిస్తుంది. గైడ్‌లు సాధారణంగా వరంగల్ కోటను కవర్ చేస్తారు, ఇది క్లిష్టమైన రాతి శిల్పాలకు ప్రసిద్ధి చెందింది మరియు కాకతీయ వాస్తుశిల్పం యొక్క అద్భుత కళాఖండం. సమీపంలోని భద్రకాళి ఆలయం మరియు ప్రశాంతమైన పాఖల్ సరస్సు కూడా ప్రసిద్ధ గమ్యస్థానాలు. ఒక గైడ్ ఈ ప్రాంతాన్ని పాలించిన కాకతీయ రాజవంశం యొక్క చరిత్రలో అంతర్దృష్టులను అందిస్తుంది మరియు స్థానిక సంస్కృతి మరియు వారసత్వాన్ని అనుభవించడానికి మార్గాలను సూచిస్తుంది.",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: ప్రామాణిక వార్తా. Selected dialect: Warangal ప్రాంతీయ మాండలికం.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced AI-driven contextual localization."
+      ],
+      "response_time_ms": 686,
+      "timestamp": "2026-06-20T09:26:41.716Z"
+    },
+    {
+      "id": "0e8e0642-d2a0-4018-8371-39ca75b3b6e0",
+      "journalist": "rao",
+      "inputs": "",
+      "english": "Warangal, another significant city in Telangana, often features prominently in travel guides for its historical importance and architectural marvels. Guides typically cover the Warangal Fort, known for its intricate stone carvings and the Thousand Pillar Temple, a masterpiece of Kakatiya architecture. The nearby Bhadrakali Temple and the serene Pakhal Lake are also popular destinations. A guide would provide insights into the history of the Kakatiya dynasty, which ruled this region, and suggest ways to experience the local culture and heritage.",
+      "tone": "Standard",
+      "dialect": "Warangal",
+      "telugu_translation": "తెలంగాణలోని మరొక ముఖ్యమైన నగరం వరంగల్, దాని చారిత్రక ప్రాముఖ్యత మరియు నిర్మాణ అద్భుతాల కోసం తరచుగా ట్రావెల్ గైడ్‌లలో ప్రముఖంగా కనిపిస్తుంది. గైడ్‌లు సాధారణంగా వరంగల్ కోటను కవర్ చేస్తారు, ఇది క్లిష్టమైన రాతి శిల్పాలకు ప్రసిద్ధి చెందింది మరియు కాకతీయ వాస్తుశిల్పం యొక్క అద్భుత కళాఖండం. సమీపంలోని భద్రకాళి ఆలయం మరియు ప్రశాంతమైన పాఖల్ సరస్సు కూడా ప్రసిద్ధ గమ్యస్థానాలు. ఒక గైడ్ ఈ ప్రాంతాన్ని పాలించిన కాకతీయ రాజవంశం యొక్క చరిత్రలో అంతర్దృష్టులను అందిస్తుంది మరియు స్థానిక సంస్కృతి మరియు వారసత్వాన్ని అనుభవించడానికి మార్గాలను సూచిస్తుంది.",
+      "cultural_notes": [
+        "Real-time English-to-Telugu translation completed successfully.",
+        "Selected tone: ప్రామాణిక వార్తా. Selected dialect: Warangal ప్రాంతీయ మాండలికం.",
+        "Configure a GEMINI_API_KEY in the backend .env file to enable advanced AI-driven contextual localization."
+      ],
+      "response_time_ms": 430,
+      "timestamp": "2026-06-20T09:28:02.288Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "466646cc-4460-4d1e-a099-06376f09afdf",
+      "generationId": "4a53faa5-314a-43fa-8257-b17c0ce37b62",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-14T09:45:37.099Z"
+    },
+    {
+      "id": "6560c81a-c5de-4d79-9e5d-e4c1750d98d1",
+      "generationId": "784c01b2-c92a-4ab9-9ba8-5aa878200af3",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-14T09:49:45.173Z"
+    },
+    {
+      "id": "1db67fe2-48af-45a9-bc0d-388b712c0c2f",
+      "generationId": "b18cb9f4-c0a2-4440-ae9a-b1c60e56fd31",
+      "rating": 5,
+      "comment": "",
+      "timestamp": "2026-06-14T09:53:33.695Z"
+    },
+    {
+      "id": "3e3f0098-2ce7-40b4-98da-782507d645ff",
+      "generationId": "702dbcba-a13c-47d4-b9f5-175b4eebeb61",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-15T03:55:00.974Z"
+    },
+    {
+      "id": "9a40417e-ca2a-4d11-9cd9-c4990e66ab27",
+      "generationId": "3ad2ca3a-a160-46e4-a456-cb4d739adc8c",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-15T03:55:31.811Z"
+    },
+    {
+      "id": "30eab475-1aa4-4574-a583-d58a3201e084",
+      "generationId": "d39fc34c-fce0-41a0-b02a-08c52d6bc01e",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-15T03:57:36.079Z"
+    },
+    {
+      "id": "f4383503-0bf1-4101-950e-2ce23a76eecd",
+      "generationId": "7a94a1cc-1739-4b86-b027-40e68f7d1e21",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-15T04:03:39.093Z"
+    },
+    {
+      "id": "f12f718d-b599-4134-9126-e249b69ebc64",
+      "generationId": "6afdf650-738c-492d-9764-8ec80fe7d8fe",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-15T04:07:04.359Z"
+    },
+    {
+      "id": "6b7e245e-4fd8-49dc-94f1-e671a150b1a4",
+      "generationId": "92eaa5da-82c8-4bc9-9999-619c212db3cc",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-15T09:25:43.977Z"
+    },
+    {
+      "id": "dd4f006e-40c0-4896-a9ef-b6d748dc8d2f",
+      "generationId": "b6bdae01-9782-4286-a9d6-2a94ca962e5e",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-15T09:29:50.103Z"
+    },
+    {
+      "id": "68e315c2-4107-4726-864f-d25068c0f0c6",
+      "generationId": "d8d3f9b4-4814-497d-bdd8-fabb25f2ac56",
+      "rating": 4,
+      "comment": "Perfect phrasing!",
+      "timestamp": "2026-06-15T09:31:06.739Z"
+    },
+    {
+      "id": "55aa6ea3-1949-4286-bb2a-87f22b368a24",
+      "generationId": "ed6c3fec-0820-48ee-b5e9-a4089e5d1c09",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-17T03:56:08.811Z"
+    },
+    {
+      "id": "01a9fd19-686f-45ee-b5eb-aaaddfd9af24",
+      "generationId": "c116628c-d58f-4be1-8c75-523f63d9db25",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-17T04:04:30.515Z"
+    },
+    {
+      "id": "e7657281-0314-4e76-b07e-e0b33a172026",
+      "generationId": "43327b60-86d5-4a25-aad1-91b44d58192d",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-17T04:48:05.048Z"
+    },
+    {
+      "id": "ae7dcd19-9532-4d89-9cf3-c8badf9198c1",
+      "generationId": "4756610e-8f65-4f61-b90e-62c3eac8d2eb",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-17T05:30:19.921Z"
+    },
+    {
+      "id": "0bd52463-7358-4285-8e60-ffb361aa81a4",
+      "generationId": "84c26503-e4f3-42a5-9d52-464fb363ba4d",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-19T04:28:23.290Z"
+    },
+    {
+      "id": "788d21a1-9db3-4294-b266-e53d74e73290",
+      "generationId": "d86df86f-6e21-4599-8c77-0c0bf24858f4",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-19T04:53:39.177Z"
+    },
+    {
+      "id": "b38d907f-d141-4be7-831b-33067f845c9b",
+      "generationId": "2abad878-4f53-426e-a11e-b3509c4bfd8b",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-20T04:36:36.280Z"
+    },
+    {
+      "id": "d5aa6949-5cb8-45e7-a4be-513ec77997ad",
+      "generationId": "79245da2-0361-4ab9-88c7-fd14814e1661",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-20T04:42:24.682Z"
+    },
+    {
+      "id": "37e7443f-7df9-4b43-8ef5-7bb3ab65ee63",
+      "generationId": "495f84c3-680d-4fad-b51b-12b87e2bc09f",
+      "rating": 4,
+      "comment": "Great translation, matches Hyderabadi dialect well.",
+      "timestamp": "2026-06-20T04:46:07.564Z"
+    },
+    {
+      "id": "398a219d-ea16-436f-9999-51be2ad5b6ef",
+      "generationId": "2fe9adfb-5d24-42c2-8d1f-2ac1501f4754",
+      "rating": 4,
+      "comment": "Hyderabadi style adapted perfectly.",
+      "timestamp": "2026-06-20T04:49:53.542Z"
+    },
+    {
+      "id": "d6f0048d-1b48-4be6-8bcd-bf7522cbb2ea",
+      "generationId": "962fa313-deaa-4f43-959e-435854df6c79",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-20T05:40:44.420Z"
+    },
+    {
+      "id": "a81504cb-cf83-4707-9320-5a007e5d5e60",
+      "generationId": "cf81ee29-afae-492c-a78c-ca3675f9ca53",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-20T08:22:02.056Z"
+    },
+    {
+      "id": "d1faf76d-3209-4369-b4aa-781affe53a2b",
+      "generationId": "6f2c7620-d6a2-4380-9456-a78d27bdc1de",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-20T09:06:44.927Z"
+    },
+    {
+      "id": "da48b205-6082-460f-8d79-cfb8500a8f10",
+      "generationId": "d59ef4b2-f402-4e91-b93d-78bb8640bd1f",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-20T09:12:51.870Z"
+    },
+    {
+      "id": "ef041a32-09fd-4661-8c56-8c2ffe3c6fc4",
+      "generationId": "0e8e0642-d2a0-4018-8371-39ca75b3b6e0",
+      "rating": 5,
+      "comment": "excellent",
+      "timestamp": "2026-06-20T09:36:50.848Z"
+    }
+  ]
+}
