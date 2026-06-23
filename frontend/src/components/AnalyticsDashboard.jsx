@@ -101,12 +101,12 @@ export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, 
     <div className="dashboard-container" id="admin-dashboard-view">
       
       {/* Top Banner */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+      <div className="dashboard-header">
         <div>
           <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)' }}>Editorial Quality & Usage Dashboard</h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Real-time analytics and editor feedback ratings overview</p>
         </div>
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+        <div className="dashboard-header-actions">
           {lastUpdated && (
             <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', animation: 'fadeIn 0.3s ease' }}>
               Last updated: {lastUpdated}

@@ -141,7 +141,7 @@ export default function InputForm({ onSubmit, isLoading, selectedRecord }) {
         </div>
 
         {/* Tone and Dialect Selectors */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
+        <div className="form-selectors-grid">
           <div>
             <label className="form-label" htmlFor="select-tone">Style Tone</label>
             <select
