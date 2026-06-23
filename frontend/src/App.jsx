@@ -4,6 +4,8 @@ import OutputDisplay from './components/OutputDisplay.jsx';
 import HistoryList from './components/HistoryList.jsx';
 import AnalyticsDashboard from './components/AnalyticsDashboard.jsx';
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8085';
+
 export default function App() {
   const [output, setOutput] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -28,7 +30,7 @@ export default function App() {
     setAnalyticsLoading(true);
     setAnalyticsError(null);
     try {
-      const response = await fetch('http://localhost:8085/api/admin/analytics');
+      const response = await fetch(`${API_BASE}/api/admin/analytics`);
       const data = await response.json();
       if (response.ok) {
         setAnalyticsData(data);
@@ -51,7 +53,7 @@ export default function App() {
   // Fetch History List from Backend API
   const fetchHistory = async () => {
     try {
-      const response = await fetch('http://localhost:8085/api/history');
+      const response = await fetch(`${API_BASE}/api/history`);
       const data = await response.json();
       if (response.ok) {
         setHistory(data);
@@ -73,7 +75,7 @@ export default function App() {
     setActiveHistoryId(id);
     setError(null);
     try {
-      const response = await fetch(`http://localhost:8085/api/history/${id}`);
+      const response = await fetch(`${API_BASE}/api/history/${id}`);
       const data = await response.json();
       if (!response.ok) {
         throw new Error(data.error || "Failed to fetch adaptation details.");
@@ -96,7 +98,7 @@ export default function App() {
     setActiveHistoryId(null);
 
     try {
-      const response = await fetch('http://localhost:8085/api/generate', {
+      const response = await fetch(`${API_BASE}/api/generate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -133,7 +135,7 @@ export default function App() {
     setOutput(null);
 
     try {
-      const response = await fetch('http://localhost:8085/api/generate', {
+      const response = await fetch(`${API_BASE}/api/generate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -176,7 +178,7 @@ export default function App() {
   // Handle Feedback Submission - POST to Backend API (Day 16)
   const handleSubmittingFeedback = async (generationId, rating, comment) => {
     try {
-      const response = await fetch('http://localhost:8085/api/feedback', {
+      const response = await fetch(`${API_BASE}/api/feedback`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
