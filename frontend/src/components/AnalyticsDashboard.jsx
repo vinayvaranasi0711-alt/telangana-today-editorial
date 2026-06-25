@@ -118,6 +118,13 @@ export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, 
           <button className="btn-copy" onClick={onClearHistory} style={{ height: '38px', borderColor: 'rgba(239,68,68,0.2)', color: 'var(--accent-coral)', backgroundColor: 'rgba(239,68,68,0.08)' }}>
             🗑️ Clear History
           </button>
+          <button 
+            className="btn-copy" 
+            onClick={() => { window.location.hash = '#/'; }} 
+            style={{ height: '38px', borderColor: 'var(--accent-teal)', color: 'var(--accent-teal)' }}
+          >
+            ⬅️ Back to Translator
+          </button>
         </div>
       </div>
 

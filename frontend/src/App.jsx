@@ -20,7 +20,7 @@ export default function App() {
   }, [theme]);
 
   // Analytics/Dashboard States
-  const [viewMode, setViewMode] = useState('translator'); // 'translator' or 'analytics'
+  const [viewMode, setViewMode] = useState(window.location.hash === '#/admin' ? 'analytics' : 'translator'); // 'translator' or 'analytics'
   const [analyticsData, setAnalyticsData] = useState(null);
   const [analyticsLoading, setAnalyticsLoading] = useState(false);
   const [analyticsError, setAnalyticsError] = useState(null);
@@ -46,6 +46,24 @@ export default function App() {
       setAnalyticsLoading(false);
     }
   };
+
+  // Hash-based Routing Listener (Day 25 requirement modification)
+  useEffect(() => {
+    const handleHashChange = () => {
+      const isDashboard = window.location.hash === '#/admin';
+      setViewMode(isDashboard ? 'analytics' : 'translator');
+      if (isDashboard) {
+        fetchAnalytics();
+      }
+    };
+
+    if (window.location.hash === '#/admin') {
+      fetchAnalytics();
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
   
   // History States
   const [history, setHistory] = useState([]);
@@ -276,27 +294,6 @@ export default function App() {
         <p className="app-subtitle" style={{ marginBottom: '1.5rem' }}>
           Translate English stories into culturally resonant, dialect-aware Telugu phrasing for regional editions.
         </p>
-
-        {/* View Mode Selector */}
-        <div className="view-selector">
-          <button 
-            id="nav-btn-translator"
-            className={`view-btn ${viewMode === 'translator' ? 'active' : ''}`}
-            onClick={() => setViewMode('translator')}
-          >
-            ✍️ Translator
-          </button>
-          <button 
-            id="nav-btn-analytics"
-            className={`view-btn ${viewMode === 'analytics' ? 'active' : ''}`}
-            onClick={() => {
-              setViewMode('analytics');
-              fetchAnalytics();
-            }}
-          >
-            📊 Admin Dashboard
-          </button>
-        </div>
       </header>
 
       {/* Conditional Rendering based on viewMode */}
