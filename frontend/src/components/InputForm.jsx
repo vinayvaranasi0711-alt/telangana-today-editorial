@@ -1,45 +1,5 @@
 import { useState, useEffect } from 'react';
 
-// Common Telangana Today templates to auto-fill the form
-const TEMPLATE_PRESETS = [
-  {
-    id: "preset-ghmc",
-    label: "GHMC Park Cleanup",
-    journalist: "Ramesh K.",
-    tone: "Colloquial",
-    dialect: "Hyderabadi",
-    inputs: "Ensure focus on municipal efforts and Deccani civic vernacular",
-    english: "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday."
-  },
-  {
-    id: "preset-irrigation",
-    label: "Irrigation Projects",
-    journalist: "Sneha Reddy",
-    tone: "Formal",
-    dialect: "Warangal",
-    inputs: "Highlight governmental promises and administrative project names",
-    english: "The minister assured that irrigation projects in the district will be completed before the monsoon season."
-  },
-  {
-    id: "preset-bonalu",
-    label: "Bonalu Festival",
-    journalist: "A. Kumar",
-    tone: "Colloquial",
-    dialect: "Standard",
-    inputs: "Infuse festival terms, energy, and localized religious greetings",
-    english: "People celebrated Bonalu with high energy and traditional drums across the old city."
-  },
-  {
-    id: "preset-sports",
-    label: "Sports Victory",
-    journalist: "Ramesh K.",
-    tone: "Standard",
-    dialect: "Standard",
-    inputs: "Dynamic sports reporting, focus on final-minute tension",
-    english: "Hyderabad FC clinched a dramatic victory in the final minutes of the match."
-  }
-];
-
 export default function InputForm({ onSubmit, isLoading, selectedRecord }) {
   const [journalist, setJournalist] = useState('');
   const [inputs, setInputs] = useState('');
@@ -60,16 +20,7 @@ export default function InputForm({ onSubmit, isLoading, selectedRecord }) {
     }
   }, [selectedRecord]);
 
-  // Handle Preset Click
-  const handleApplyPreset = (preset) => {
-    if (isLoading) return;
-    setJournalist(preset.journalist);
-    setInputs(preset.inputs);
-    setEnglish(preset.english);
-    setTone(preset.tone);
-    setDialect(preset.dialect);
-    setErrors({});
-  };
+
 
   // Form Validation
   const validateForm = () => {
@@ -105,25 +56,6 @@ export default function InputForm({ onSubmit, isLoading, selectedRecord }) {
     <div className="glass-panel" style={{ padding: '2rem' }}>
       <h2 style={{ marginBottom: '1.5rem', fontFamily: 'var(--font-display)' }}>Adapt Story Draft</h2>
       
-      {/* Template Presets */}
-      <div style={{ marginBottom: '1.5rem' }}>
-        <span className="form-label">Quick Presets</span>
-        <div className="presets-container">
-          {TEMPLATE_PRESETS.map((preset) => (
-            <button
-              key={preset.id}
-              id={preset.id}
-              type="button"
-              className="preset-chip"
-              disabled={isLoading}
-              onClick={() => handleApplyPreset(preset)}
-            >
-              {preset.label}
-            </button>
-          ))}
-        </div>
-      </div>
-
       <form onSubmit={handleSubmit} id="localisation-form">
         {/* Journalist Input */}
         <div className="form-group">
