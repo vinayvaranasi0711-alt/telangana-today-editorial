@@ -26,14 +26,15 @@ export default function AnalyticsDashboard({
   const [presetError, setPresetError] = useState('');
   const [presetSuccess, setPresetSuccess] = useState('');
 
-  const handleAuthenticate = (e) => {
+  const handleAuthenticate = async (e) => {
     e.preventDefault();
-    if (password === 'admin123') {
+    setAuthError('');
+    const success = await onRefresh(password);
+    if (success) {
       sessionStorage.setItem('admin_authed', 'true');
       sessionStorage.setItem('admin_password', password);
       setAuthError('');
       setIsAdminAuthed(true);
-      onRefresh();
     } else {
       setAuthError('Incorrect Admin Password. Please try again.');
     }

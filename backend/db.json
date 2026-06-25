@@ -996,6 +996,22 @@
       ],
       "response_time_ms": 2,
       "timestamp": "2026-06-25T07:46:49.847Z"
+    },
+    {
+      "id": "e294220f-bd1d-4d27-a706-27acdd171d4c",
+      "journalist": "Ramesh K.",
+      "inputs": "Civic cleanliness",
+      "english": "The Greater Hyderabad Municipal Corporation (GHMC) announced a new drive to clean up municipal parks starting next Monday.",
+      "tone": "Colloquial",
+      "dialect": "Hyderabadi",
+      "telugu_translation": "వచ్చే సోమవారం నుండి నగరంలోని పార్కులను సాఫ్ చేయడానికి జీహెచ్‌ఎంసీ (GHMC) ఒక కొత్త కార్యక్రమాన్ని మొదలుపెడ్తాంది బాయ్.",
+      "cultural_notes": [
+        "Used 'సాఫ్ చేయడానికి' (clean up) which is highly colloquial in Deccani/Hyderabadi Telugu.",
+        "Adjusted the sentence structure to read like a local community announcement.",
+        "Added Hyderabadi Deccani ending 'బాయ్' for colloquial character."
+      ],
+      "response_time_ms": 1,
+      "timestamp": "2026-06-25T07:53:46.402Z"
     }
   ],
   "feedback": [
@@ -1187,6 +1203,13 @@
       "rating": 4,
       "comment": "Excellent local Hyderabadi phrasing!",
       "timestamp": "2026-06-25T07:46:49.891Z"
+    },
+    {
+      "id": "60869fa5-80b5-4092-ab92-bf66180960d7",
+      "generationId": "e294220f-bd1d-4d27-a706-27acdd171d4c",
+      "rating": 4,
+      "comment": "Excellent local Hyderabadi phrasing!",
+      "timestamp": "2026-06-25T07:53:46.459Z"
     }
   ],
   "presets": []

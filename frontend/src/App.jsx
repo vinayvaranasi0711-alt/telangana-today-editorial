@@ -31,31 +31,34 @@ export default function App() {
   );
 
   // Fetch detailed admin metrics
-  const fetchAnalytics = async () => {
+  const fetchAnalytics = async (customPassword) => {
     setAnalyticsLoading(true);
     setAnalyticsError(null);
+    const passwordToUse = customPassword || sessionStorage.getItem('admin_password') || '';
     try {
       const response = await fetch(`${API_BASE}/api/admin/analytics`, {
         headers: {
-          'Authorization': `Bearer ${sessionStorage.getItem('admin_password') || ''}`
+          'Authorization': `Bearer ${passwordToUse}`
         }
       });
       if (response.status === 401) {
         sessionStorage.removeItem('admin_authed');
         sessionStorage.removeItem('admin_password');
         setIsAdminAuthed(false);
-        throw new Error("Unauthorized: Admin password is incorrect or session expired.");
+        return false;
       }
       const data = await response.json();
       if (response.ok) {
         setAnalyticsData(data);
         setAnalyticsLastUpdated(new Date().toLocaleTimeString());
+        return true;
       } else {
         throw new Error(data.error || "Failed to load analytics reports.");
       }
     } catch (err) {
       console.error("Failed to connect to analytics endpoint:", err);
       setAnalyticsError(err.message || "Unable to connect to the admin database.");
+      return false;
     } finally {
       setAnalyticsLoading(false);
     }
