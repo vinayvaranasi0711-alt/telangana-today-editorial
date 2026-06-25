@@ -76,16 +76,35 @@ An advanced AI-powered localization and translation system designed specifically
 
 ## ☁️ Deployment
 
-### Backend (Render)
-1.  Create a **Web Service** on [Render](https://render.com).
-2.  Select the root directory as `backend`.
-3.  Set the start command to `node server.js` and build command to `npm install`.
-4.  Configure the `GEMINI_API_KEY` environment variable.
+Both the frontend static client and backend API server are deployed on **Render** (render.com):
 
-### Frontend (Vercel)
-1.  Create a project on [Vercel](https://vercel.com).
-2.  Select the root directory as `frontend`.
-3.  Configure the environment variable `VITE_API_URL` pointing to your Render backend web service.
+### A. Backend Deployment (Web Service)
+1. Create a **Web Service** on Render.
+2. Select the repository `telangana-today-editorial`.
+3. Set the following configuration:
+   - **Root Directory**: `backend`
+   - **Build Command**: `npm install`
+   - **Start Command**: `node server.js`
+4. Under **Environment Variables**, add:
+   - `GEMINI_API_KEY`: *(Your Google Gemini API Key)*
+5. Deploy and copy your backend service URL (e.g., `https://telangana-today-backend.onrender.com`).
+
+### B. Frontend Deployment (Static Site)
+1. Create a **Static Site** on Render.
+2. Select the same repository `telangana-today-editorial`.
+3. Set the following configuration:
+   - **Root Directory**: `frontend`
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `dist`
+4. Under **Environment Variables**, add:
+   - `VITE_API_URL`: *(Your Render backend Web Service URL, without trailing slash)*
+5. Deploy the Static Site.
+
+### 🌐 Accessing Deployed Views
+Once deployed, the views are separated cleanly:
+* **Journalist Translator View:** `https://your-frontend.onrender.com` (Main root URL)
+* **Admin Dashboard View:** `https://your-frontend.onrender.com/#/admin` (Append `#/admin` to the URL to access stats)
+
 
 ---
 
