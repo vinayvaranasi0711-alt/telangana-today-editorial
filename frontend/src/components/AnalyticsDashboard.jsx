@@ -1,6 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, lastUpdated, onClearHistory }) {
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    sessionStorage.getItem('admin_authed') === 'true'
+  );
+  const [password, setPassword] = useState('');
+  const [authError, setAuthError] = useState('');
+
+  const handleAuthenticate = (e) => {
+    e.preventDefault();
+    if (password === 'admin123') {
+      setIsAuthenticated(true);
+      sessionStorage.setItem('admin_authed', 'true');
+      setAuthError('');
+    } else {
+      setAuthError('Incorrect Admin Password. Please try again.');
+    }
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="glass-panel dashboard-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '400px', maxWidth: '440px', margin: '4rem auto', padding: '2.5rem' }}>
+        <form onSubmit={handleAuthenticate} style={{ width: '100%', textAlign: 'center' }}>
+          <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔒</div>
+          <h3 style={{ marginBottom: '0.5rem', fontFamily: 'var(--font-display)', color: 'var(--text-primary)' }}>Admin Verification Required</h3>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', marginBottom: '1.8rem' }}>Please enter the administrator password to view metrics.</p>
+          
+          <div className="form-group" style={{ textAlign: 'left' }}>
+            <label className="form-label" htmlFor="admin-pin">Admin Password</label>
+            <input 
+              id="admin-pin"
+              type="password"
+              className="form-input"
+              placeholder="Enter password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              style={{ backgroundColor: 'rgba(11, 19, 41, 0.4)' }}
+              required
+            />
+            {authError && <p className="form-error" style={{ marginTop: '0.5rem', color: 'var(--accent-coral)' }}>{authError}</p>}
+          </div>
+
+          <button className="btn btn-primary" type="submit" style={{ marginTop: '1rem', width: '100%' }}>
+            Verify Access
+          </button>
+          
+          <button 
+            type="button"
+            className="btn btn-secondary" 
+            onClick={() => { window.location.hash = '#/'; }}
+            style={{ marginTop: '0.8rem', width: '100%' }}
+          >
+            ⬅️ Cancel & Go Back
+          </button>
+        </form>
+      </div>
+    );
+  }
   if (isLoading) {
     return (
       <div className="glass-panel dashboard-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '500px' }}>
@@ -40,6 +96,37 @@ export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, 
     daily_trend = [],
     feedback_logs = []
   } = data;
+
+  // CSV Export Handler
+  const handleExportCSV = () => {
+    if (!feedback_logs || feedback_logs.length === 0) {
+      alert("No logs available to export.");
+      return;
+    }
+
+    const headers = ["Timestamp", "Journalist", "English Draft", "Telugu Translation", "Style Tone", "Regional Dialect", "Rating", "Comments"];
+    const rows = feedback_logs.map(log => [
+      new Date(log.timestamp).toLocaleString(),
+      `"${(log.journalist || '').replace(/"/g, '""')}"`,
+      `"${(log.english || '').replace(/"/g, '""')}"`,
+      `"${(log.telugu_translation || '').replace(/"/g, '""')}"`,
+      log.tone || 'Standard',
+      log.dialect || 'Standard',
+      log.rating,
+      `"${(log.comment || '').replace(/"/g, '""')}"`
+    ]);
+
+    const csvString = [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
+    const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `editorial_logs_${new Date().toISOString().split('T')[0]}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
 
   // --- Dynamic SVG Chart Calculations ---
   const chartHeight = 150;
@@ -114,6 +201,9 @@ export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, 
           )}
           <button className="btn-copy" onClick={onRefresh} style={{ height: '38px', borderColor: 'rgba(255,255,255,0.1)', color: 'var(--text-secondary)' }}>
             🔄 Refresh Stats
+          </button>
+          <button className="btn-copy" onClick={handleExportCSV} style={{ height: '38px', borderColor: 'rgba(0, 245, 212, 0.3)', color: 'var(--accent-teal)' }}>
+            📥 Export Excel
           </button>
           <button className="btn-copy" onClick={onClearHistory} style={{ height: '38px', borderColor: 'rgba(239,68,68,0.2)', color: 'var(--accent-coral)', backgroundColor: 'rgba(239,68,68,0.08)' }}>
             🗑️ Clear History
