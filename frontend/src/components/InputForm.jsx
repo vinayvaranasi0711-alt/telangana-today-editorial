@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function InputForm({ onSubmit, isLoading, selectedRecord }) {
+export default function InputForm({ onSubmit, isLoading, selectedRecord, presets = [] }) {
   const [journalist, setJournalist] = useState('');
   const [inputs, setInputs] = useState('');
   const [english, setEnglish] = useState('');
@@ -52,10 +52,41 @@ export default function InputForm({ onSubmit, isLoading, selectedRecord }) {
     setErrors({});
   };
 
+  const handleApplyPreset = (preset) => {
+    if (isLoading) return;
+    setJournalist(preset.journalist || '');
+    setInputs(preset.inputs || '');
+    setEnglish(preset.english || '');
+    setTone(preset.tone || 'Standard');
+    setDialect(preset.dialect || 'Standard');
+    setErrors({});
+  };
+
   return (
     <div className="glass-panel" style={{ padding: '2rem' }}>
       <h2 style={{ marginBottom: '1.5rem', fontFamily: 'var(--font-display)' }}>Adapt Story Draft</h2>
       
+      {/* Dynamic Highlight News Presets */}
+      {presets.length > 0 && (
+        <div style={{ marginBottom: '1.5rem' }}>
+          <span className="form-label" style={{ color: 'var(--accent-teal)' }}>📢 Highlight News Presets</span>
+          <div className="presets-container">
+            {presets.map((preset) => (
+              <button
+                key={preset.id}
+                type="button"
+                className="preset-chip"
+                style={{ borderColor: 'rgba(0, 245, 212, 0.2)', color: 'var(--text-primary)' }}
+                disabled={isLoading}
+                onClick={() => handleApplyPreset(preset)}
+              >
+                {preset.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       <form onSubmit={handleSubmit} id="localisation-form">
         {/* Journalist Input */}
         <div className="form-group">

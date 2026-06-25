@@ -163,7 +163,9 @@ async function runTests() {
 
   // Test 10: Get Detailed Admin Analytics metrics
   try {
-    const res = await fetch(`${BASE_URL}/api/admin/analytics`);
+    const res = await fetch(`${BASE_URL}/api/admin/analytics`, {
+      headers: { 'Authorization': 'Bearer admin123' }
+    });
     assert.strictEqual(res.status, 200, "Admin Analytics fetch status should be 200");
     const adminData = await res.json();
     assert.ok(adminData.total_generations >= 1, "Admin Analytics should log generations");

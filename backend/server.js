@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { rateLimit } from 'express-rate-limit';
 import { generateLocalisedTranslation } from './promptEngine.js';
-import { saveGeneration, getHistory, getGenerationById, saveFeedback, getQualityAnalytics, getAdminAnalytics, clearHistory } from './db.js';
+import { saveGeneration, getHistory, getGenerationById, saveFeedback, getQualityAnalytics, getAdminAnalytics, clearHistory, getPresets, savePreset, deletePreset } from './db.js';
 
 dotenv.config();
 
@@ -32,6 +32,22 @@ app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
   next();
 });
+
+// Admin Authorization Middleware
+const requireAdmin = (req, res, next) => {
+  const adminPassword = process.env.ADMIN_PASSWORD || 'admin123';
+  const authHeader = req.headers['authorization'] || req.headers['x-admin-password'];
+  
+  const token = authHeader && authHeader.startsWith('Bearer ') 
+    ? authHeader.substring(7) 
+    : authHeader;
+    
+  if (token === adminPassword) {
+    next();
+  } else {
+    res.status(401).json({ error: "Unauthorized: Admin privileges required." });
+  }
+};
 
 // Root endpoint returning API metadata
 app.get('/', (req, res) => {
@@ -90,7 +106,7 @@ app.get('/api/analytics/quality', async (req, res) => {
 });
 
 // GET /api/admin/analytics endpoint
-app.get('/api/admin/analytics', async (req, res) => {
+app.get('/api/admin/analytics', requireAdmin, async (req, res) => {
   try {
     const analytics = await getAdminAnalytics();
     res.status(200).json(analytics);
@@ -187,13 +203,51 @@ app.post('/api/generate', apiRateLimiter, async (req, res) => {
 });
 
 // POST /api/history/clear endpoint
-app.post('/api/history/clear', async (req, res) => {
+app.post('/api/history/clear', requireAdmin, async (req, res) => {
   try {
     await clearHistory();
     res.status(200).json({ success: true, message: "History cleared successfully." });
   } catch (error) {
     console.error("Failed to clear history:", error);
     res.status(500).json({ error: "Failed to clear history." });
+  }
+});
+
+// GET /api/presets endpoint
+app.get('/api/presets', async (req, res) => {
+  try {
+    const presets = await getPresets();
+    res.status(200).json(presets);
+  } catch (error) {
+    console.error("Failed to fetch presets:", error);
+    res.status(500).json({ error: "Failed to fetch presets." });
+  }
+});
+
+// POST /api/presets endpoint
+app.post('/api/presets', requireAdmin, async (req, res) => {
+  const { label, journalist, inputs, english, tone, dialect } = req.body;
+  if (!label || !journalist || !english) {
+    return res.status(400).json({ error: "Label, Journalist, and English story draft are required." });
+  }
+  try {
+    const newPreset = await savePreset({ label, journalist, inputs: inputs || '', english, tone: tone || 'Standard', dialect: dialect || 'Standard' });
+    res.status(200).json(newPreset);
+  } catch (error) {
+    console.error("Failed to save preset:", error);
+    res.status(500).json({ error: "Failed to save preset." });
+  }
+});
+
+// DELETE /api/presets/:id endpoint
+app.delete('/api/presets/:id', requireAdmin, async (req, res) => {
+  const { id } = req.params;
+  try {
+    await deletePreset(id);
+    res.status(200).json({ success: true, message: "Preset deleted successfully." });
+  } catch (error) {
+    console.error("Failed to delete preset:", error);
+    res.status(500).json({ error: "Failed to delete preset." });
   }
 });
 

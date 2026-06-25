@@ -20,13 +20,14 @@ async function readDb() {
       };
     }
     
-    // Ensure both collections exist
+    // Ensure collections exist
     if (!parsed.generations) parsed.generations = [];
     if (!parsed.feedback) parsed.feedback = [];
+    if (!parsed.presets) parsed.presets = [];
     return parsed;
   } catch (error) {
     if (error.code === 'ENOENT') {
-      return { generations: [], feedback: [] };
+      return { generations: [], feedback: [], presets: [] };
     }
     throw error;
   }
@@ -284,8 +285,35 @@ export async function getAdminAnalytics() {
 }
 
 export async function clearHistory() {
-  const emptyDb = { generations: [], feedback: [] };
+  const db = await readDb();
+  const emptyDb = { generations: [], feedback: [], presets: db.presets || [] };
   await writeDb(emptyDb);
   return emptyDb;
+}
+
+export async function getPresets() {
+  const db = await readDb();
+  return db.presets || [];
+}
+
+export async function savePreset(preset) {
+  const db = await readDb();
+  if (!db.presets) db.presets = [];
+  const id = crypto.randomUUID();
+  const newPreset = {
+    id,
+    ...preset
+  };
+  db.presets.push(newPreset);
+  await writeDb(db);
+  return newPreset;
+}
+
+export async function deletePreset(id) {
+  const db = await readDb();
+  if (!db.presets) db.presets = [];
+  db.presets = db.presets.filter(p => p.id !== id);
+  await writeDb(db);
+  return true;
 }
 

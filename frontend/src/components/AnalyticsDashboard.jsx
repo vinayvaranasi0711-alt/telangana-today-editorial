@@ -1,24 +1,82 @@
 import React, { useState } from 'react';
 
-export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, lastUpdated, onClearHistory }) {
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    sessionStorage.getItem('admin_authed') === 'true'
-  );
+export default function AnalyticsDashboard({ 
+  data, 
+  isLoading, 
+  error, 
+  onRefresh, 
+  lastUpdated, 
+  onClearHistory, 
+  presets = [], 
+  onCreatePreset, 
+  onDeletePreset,
+  isAdminAuthed,
+  setIsAdminAuthed
+}) {
   const [password, setPassword] = useState('');
   const [authError, setAuthError] = useState('');
+
+  // Form states for adding dynamic highlight news presets
+  const [presetLabel, setPresetLabel] = useState('');
+  const [presetJournalist, setPresetJournalist] = useState('');
+  const [presetInputs, setPresetInputs] = useState('');
+  const [presetEnglish, setPresetEnglish] = useState('');
+  const [presetTone, setPresetTone] = useState('Standard');
+  const [presetDialect, setPresetDialect] = useState('Standard');
+  const [presetError, setPresetError] = useState('');
+  const [presetSuccess, setPresetSuccess] = useState('');
 
   const handleAuthenticate = (e) => {
     e.preventDefault();
     if (password === 'admin123') {
-      setIsAuthenticated(true);
       sessionStorage.setItem('admin_authed', 'true');
+      sessionStorage.setItem('admin_password', password);
       setAuthError('');
+      setIsAdminAuthed(true);
+      onRefresh();
     } else {
       setAuthError('Incorrect Admin Password. Please try again.');
     }
   };
 
-  if (!isAuthenticated) {
+  const handleLogout = () => {
+    sessionStorage.removeItem('admin_authed');
+    sessionStorage.removeItem('admin_password');
+    setIsAdminAuthed(false);
+    window.location.hash = '#/';
+  };
+
+  const handleSubmitPreset = async (e) => {
+    e.preventDefault();
+    setPresetError('');
+    setPresetSuccess('');
+    if (!presetLabel.trim() || !presetJournalist.trim() || !presetEnglish.trim()) {
+      setPresetError("Preset Title, Journalist Name, and English Story Draft are required.");
+      return;
+    }
+    const success = await onCreatePreset({
+      label: presetLabel,
+      journalist: presetJournalist,
+      inputs: presetInputs,
+      english: presetEnglish,
+      tone: presetTone,
+      dialect: presetDialect
+    });
+    if (success) {
+      setPresetSuccess("Highlight Preset added successfully!");
+      // Reset fields
+      setPresetLabel('');
+      setPresetJournalist('');
+      setPresetInputs('');
+      setPresetEnglish('');
+      setPresetTone('Standard');
+      setPresetDialect('Standard');
+      // Clear success message after 3 seconds
+      setTimeout(() => setPresetSuccess(''), 3000);
+    }
+  };
+
+  if (!isAdminAuthed) {
     return (
       <div className="glass-panel dashboard-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '400px', maxWidth: '440px', margin: '4rem auto', padding: '2.5rem' }}>
         <form onSubmit={handleAuthenticate} style={{ width: '100%', textAlign: 'center' }}>
@@ -214,6 +272,13 @@ export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, 
             style={{ height: '38px', borderColor: 'var(--accent-teal)', color: 'var(--accent-teal)' }}
           >
             ⬅️ Back to Translator
+          </button>
+          <button 
+            className="btn-copy" 
+            onClick={handleLogout} 
+            style={{ height: '38px', borderColor: 'rgba(239,68,68,0.3)', color: 'var(--accent-coral)', backgroundColor: 'rgba(239,68,68,0.05)' }}
+          >
+            🔒 Logout
           </button>
         </div>
       </div>
@@ -492,6 +557,142 @@ export default function AnalyticsDashboard({ data, isLoading, error, onRefresh, 
           )}
         </div>
 
+      </div>
+
+      {/* Dynamic Highlight News Presets Form Section (Admin only) */}
+      <div className="glass-panel" style={{ marginTop: '2rem', padding: '2rem' }}>
+        <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255, 255, 255, 0.1)', paddingBottom: '0.5rem' }}>
+          📢 Manage Highlight News Presets
+        </h3>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '2rem' }} className="form-selectors-grid">
+          
+          {/* Create Preset Form */}
+          <form onSubmit={handleSubmitPreset}>
+            <h4 style={{ marginBottom: '1rem', color: 'var(--accent-teal)', fontSize: '1rem' }}>Add New Highlight Story</h4>
+            {presetError && <p className="form-error" style={{ color: 'var(--accent-coral)', marginBottom: '1rem' }}>{presetError}</p>}
+            {presetSuccess && <p style={{ color: 'var(--accent-emerald)', marginBottom: '1rem', fontSize: '0.9rem', fontWeight: 600 }}>{presetSuccess}</p>}
+            
+            <div className="form-group">
+              <label className="form-label" htmlFor="preset-title">Preset Title *</label>
+              <input 
+                id="preset-title"
+                type="text"
+                className="form-input"
+                placeholder="e.g. Bonalu Festival"
+                value={presetLabel}
+                onChange={(e) => setPresetLabel(e.target.value)}
+                required
+              />
+            </div>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }} className="form-selectors-grid">
+              <div>
+                <label className="form-label" htmlFor="preset-journalist">Journalist Name *</label>
+                <input 
+                  id="preset-journalist"
+                  type="text"
+                  className="form-input"
+                  placeholder="e.g. Ramesh K."
+                  value={presetJournalist}
+                  onChange={(e) => setPresetJournalist(e.target.value)}
+                  required
+                />
+              </div>
+              <div>
+                <label className="form-label" htmlFor="preset-context">Phrasing Context (Optional)</label>
+                <input 
+                  id="preset-context"
+                  type="text"
+                  className="form-input"
+                  placeholder="e.g. Highlight festive energy"
+                  value={presetInputs}
+                  onChange={(e) => setPresetInputs(e.target.value)}
+                />
+              </div>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }} className="form-selectors-grid">
+              <div>
+                <label className="form-label" htmlFor="preset-select-tone">Style Tone</label>
+                <select
+                  id="preset-select-tone"
+                  className="form-select"
+                  value={presetTone}
+                  onChange={(e) => setPresetTone(e.target.value)}
+                >
+                  <option value="Standard">Standard (News Style)</option>
+                  <option value="Colloquial">Colloquial (Conversational)</option>
+                  <option value="Formal">Formal (High Literary)</option>
+                </select>
+              </div>
+              <div>
+                <label className="form-label" htmlFor="preset-select-dialect">Regional Dialect</label>
+                <select
+                  id="preset-select-dialect"
+                  className="form-select"
+                  value={presetDialect}
+                  onChange={(e) => setPresetDialect(e.target.value)}
+                >
+                  <option value="Standard">Standard (Universal)</option>
+                  <option value="Hyderabadi">Hyderabadi (Deccani Influence)</option>
+                  <option value="Warangal">Warangal (Telangana Regional)</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label className="form-label" htmlFor="preset-english">English Story Draft *</label>
+              <textarea 
+                id="preset-english"
+                className="form-textarea"
+                placeholder="Paste the English draft that this preset will load..."
+                value={presetEnglish}
+                onChange={(e) => setPresetEnglish(e.target.value)}
+                style={{ minHeight: '100px' }}
+                required
+              />
+            </div>
+
+            <button className="btn btn-primary" type="submit" style={{ width: '100%' }}>
+              ➕ Create Highlight Preset
+            </button>
+          </form>
+
+          {/* Existing Presets List */}
+          <div>
+            <h4 style={{ marginBottom: '1rem', color: 'var(--text-secondary)', fontSize: '1rem' }}>Active Highlight News ({presets.length})</h4>
+            {presets.length === 0 ? (
+              <div className="dashboard-empty-state" style={{ border: '1px dashed rgba(255,255,255,0.1)', borderRadius: '8px', padding: '2rem' }}>
+                <p>No custom highlight presets added yet.</p>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', maxHeight: '440px', overflowY: 'auto', paddingRight: '0.5rem' }}>
+                {presets.map((preset) => (
+                  <div key={preset.id} className="leaderboard-item" style={{ flexDirection: 'column', alignItems: 'stretch', gap: '0.5rem', padding: '1rem' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontWeight: 600, color: 'var(--accent-teal)' }}>{preset.label}</span>
+                      <button 
+                        onClick={() => onDeletePreset(preset.id)}
+                        className="btn-copy"
+                        style={{ padding: '0.2rem 0.5rem', fontSize: '0.75rem', borderColor: 'rgba(239,68,68,0.3)', color: 'var(--accent-coral)', backgroundColor: 'rgba(239,68,68,0.05)' }}
+                      >
+                        🗑️ Delete
+                      </button>
+                    </div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                      <span>By {preset.journalist}</span> • <span>{preset.dialect} / {preset.tone}</span>
+                    </div>
+                    <p style={{ fontSize: '0.78rem', color: 'var(--text-dim)', margin: 0, overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                      {preset.english}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+        </div>
       </div>
 
     </div>

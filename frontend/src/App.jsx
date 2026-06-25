@@ -25,13 +25,27 @@ export default function App() {
   const [analyticsLoading, setAnalyticsLoading] = useState(false);
   const [analyticsError, setAnalyticsError] = useState(null);
   const [analyticsLastUpdated, setAnalyticsLastUpdated] = useState(null);
+  const [presets, setPresets] = useState([]); // Dynamic Highlight News Presets
+  const [isAdminAuthed, setIsAdminAuthed] = useState(
+    sessionStorage.getItem('admin_authed') === 'true' && !!sessionStorage.getItem('admin_password')
+  );
 
   // Fetch detailed admin metrics
   const fetchAnalytics = async () => {
     setAnalyticsLoading(true);
     setAnalyticsError(null);
     try {
-      const response = await fetch(`${API_BASE}/api/admin/analytics`);
+      const response = await fetch(`${API_BASE}/api/admin/analytics`, {
+        headers: {
+          'Authorization': `Bearer ${sessionStorage.getItem('admin_password') || ''}`
+        }
+      });
+      if (response.status === 401) {
+        sessionStorage.removeItem('admin_authed');
+        sessionStorage.removeItem('admin_password');
+        setIsAdminAuthed(false);
+        throw new Error("Unauthorized: Admin password is incorrect or session expired.");
+      }
       const data = await response.json();
       if (response.ok) {
         setAnalyticsData(data);
@@ -85,9 +99,25 @@ export default function App() {
     }
   };
 
-  // Load History on Mount
+  // Fetch dynamic presets list from Backend API
+  const fetchPresets = async () => {
+    try {
+      const response = await fetch(`${API_BASE}/api/presets`);
+      const data = await response.json();
+      if (response.ok) {
+        setPresets(data);
+      } else {
+        console.error("Failed to load presets list:", data.error);
+      }
+    } catch (err) {
+      console.error("Failed to connect to presets endpoint:", err);
+    }
+  };
+
+  // Load History & Presets on Mount
   useEffect(() => {
     fetchHistory();
+    fetchPresets();
   }, []);
 
   // Fetch specific history detail and update view states
@@ -202,8 +232,18 @@ export default function App() {
     }
     try {
       const response = await fetch(`${API_BASE}/api/history/clear`, {
-        method: 'POST'
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${sessionStorage.getItem('admin_password') || ''}`
+        }
       });
+      if (response.status === 401) {
+        sessionStorage.removeItem('admin_authed');
+        sessionStorage.removeItem('admin_password');
+        setIsAdminAuthed(false);
+        alert("Unauthorized: Admin password is incorrect or session expired.");
+        return;
+      }
       if (response.ok) {
         setHistory([]);
         setOutput(null);
@@ -226,6 +266,69 @@ export default function App() {
     } catch (err) {
       console.error("Clear history connection error:", err);
       alert("Unable to connect to backend to clear history.");
+    }
+  };
+
+  // Handle creating a new highlight news preset (Admin only)
+  const handleCreatePreset = async (presetData) => {
+    try {
+      const response = await fetch(`${API_BASE}/api/presets`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${sessionStorage.getItem('admin_password') || ''}`
+        },
+        body: JSON.stringify(presetData)
+      });
+      if (response.status === 401) {
+        sessionStorage.removeItem('admin_authed');
+        sessionStorage.removeItem('admin_password');
+        setIsAdminAuthed(false);
+        alert("Unauthorized: Admin password is incorrect or session expired.");
+        return false;
+      }
+      const data = await response.json();
+      if (response.ok) {
+        setPresets(prev => [...prev, data]);
+        return true;
+      } else {
+        alert(data.error || "Failed to create preset.");
+        return false;
+      }
+    } catch (err) {
+      console.error("Create preset connection error:", err);
+      alert("Unable to connect to backend to create preset.");
+      return false;
+    }
+  };
+
+  // Handle deleting a preset (Admin only)
+  const handleDeletePreset = async (id) => {
+    if (!window.confirm("Are you sure you want to delete this highlight news preset?")) {
+      return;
+    }
+    try {
+      const response = await fetch(`${API_BASE}/api/presets/${id}`, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${sessionStorage.getItem('admin_password') || ''}`
+        }
+      });
+      if (response.status === 401) {
+        sessionStorage.removeItem('admin_authed');
+        sessionStorage.removeItem('admin_password');
+        setIsAdminAuthed(false);
+        alert("Unauthorized: Admin password is incorrect or session expired.");
+        return;
+      }
+      if (response.ok) {
+        setPresets(prev => prev.filter(p => p.id !== id));
+      } else {
+        alert("Failed to delete preset from database.");
+      }
+    } catch (err) {
+      console.error("Delete preset connection error:", err);
+      alert("Unable to connect to backend to delete preset.");
     }
   };
 
@@ -308,6 +411,7 @@ export default function App() {
             onSubmit={handleAdaptStory}
             isLoading={isLoading}
             selectedRecord={selectedRecord}
+            presets={presets}
           />
           <OutputDisplay 
             output={output} 
@@ -327,6 +431,11 @@ export default function App() {
             onRefresh={fetchAnalytics}
             lastUpdated={analyticsLastUpdated}
             onClearHistory={handleClearHistory}
+            presets={presets}
+            onCreatePreset={handleCreatePreset}
+            onDeletePreset={handleDeletePreset}
+            isAdminAuthed={isAdminAuthed}
+            setIsAdminAuthed={setIsAdminAuthed}
           />
         </main>
       )}
