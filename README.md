@@ -103,7 +103,7 @@ Both the frontend static client and backend API server are deployed on **Render*
 ### 🌐 Accessing Deployed Views
 Once deployed, the views are separated cleanly:
 * **Journalist Translator View:** `https://your-frontend.onrender.com` (Main root URL)
-* **Admin Dashboard View:** `https://your-frontend.onrender.com/#/admin` (Append `#/admin` to the URL to access stats)
+* **Admin Dashboard View:** `https://your-frontend.onrender.com/#/admin` (Append `#/admin` to the URL. The default password is `admin123`)
 
 
 ---
