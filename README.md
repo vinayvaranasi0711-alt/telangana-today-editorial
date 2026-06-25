@@ -9,7 +9,7 @@ An advanced AI-powered localization and translation system designed specifically
 *   **Dialect & Tone Customization**: Translate English text into localized Telugu while selecting target dialects and editorial tones.
 *   **Real-time Word & Character Counters**: Visual limits and counts on input and output fields to respect print/column constraints.
 *   **Star-Rating & Feedback Collection**: Localized rating system allowing journalists to score translations and leave comments.
-*   **Admin Analytics Dashboard**: Glassmorphic analytics panel visualizing:
+*   **Separated Admin Analytics Dashboard**: Isolated glassmorphic analytics panel (accessible via `/#/admin` route) visualizing:
     *   System quality score trends.
     *   Dialect and tone preference distributions.
     *   Top active journalists (leaderboard).
@@ -70,7 +70,7 @@ An advanced AI-powered localization and translation system designed specifically
     npm install
     npm run dev
     ```
-    Open `http://localhost:5173` in your browser.
+    Open `http://localhost:5173` in your browser for the Translator, or `http://localhost:5173/#/admin` for the Admin Dashboard.
 
 ---
 
