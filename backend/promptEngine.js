@@ -235,7 +235,7 @@ async function getMockTranslation(english, tone, dialect, regenerate = false) {
 export async function generateLocalisedTranslation({ journalist, inputs, english, tone = 'Standard', dialect = 'Standard', regenerate = false }) {
   const apiKey = process.env.GEMINI_API_KEY;
 
-  if (!apiKey || apiKey === 'YOUR_GEMINI_API_KEY_HERE') {
+  if (!apiKey || apiKey === 'YOUR_GEMINI_API_KEY_HERE' || apiKey === 'your_gemini_api_key_here') {
     console.log(`[INFO] Running in local Mock Mode. Request params: Tone=${tone}, Dialect=${dialect}, Regenerate=${regenerate}`);
     return await getMockTranslation(english, tone, dialect, regenerate);
   }
